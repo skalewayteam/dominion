@@ -11,9 +11,6 @@ const Hero = () => {
           <p className="text-lg lg:text-xl text-neutral-200 leading-relaxed max-w-3xl">
             What we've been doing over the past years
           </p>
-          <div className="mt-4">
-            <Donate />
-          </div>
         </div>
       </div>
     </section>

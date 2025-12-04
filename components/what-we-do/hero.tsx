@@ -11,9 +11,6 @@ const Hero = () => {
           <p className="text-lg lg:text-xl text-neutral-200 leading-relaxed max-w-3xl">
             Put a smile on the faces of these children
           </p>
-          <div className="mt-4">
-            <Donate />
-          </div>
         </div>
       </div>
     </section>

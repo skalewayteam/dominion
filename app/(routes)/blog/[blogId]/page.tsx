@@ -2,8 +2,9 @@ import Blog from "@/components/blog";
 import Hero from "@/components/blog/hero";
 import SingleBlog from "@/components/singleBlog";
 import { Params } from "@/types";
-import { Search } from "lucide-react";
+import { Search, ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -22,6 +23,13 @@ const BlogId = async ({ params }: { params: Params }) => {
       <section className="padding bg-white text-[#111]">
         <section className="flex gap-10 max-w-2xl w-full mx-auto ">
           <section className="flex-[2]">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/90 transition-colors duration-200 mb-6 group"
+            >
+              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" />
+              <span className="font-medium">Back to Blogs</span>
+            </Link>
             <SingleBlog blogId={blogId} />
           </section>
           <section className="lg:flex-1 hidden">

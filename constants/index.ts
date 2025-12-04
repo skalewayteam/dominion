@@ -210,7 +210,7 @@ export async function getBlogs(slug?: string) {
 
     return data;
   }
-  const query = `*[_type == "blog"]`;
+  const query = `*[_type == "blog"] | order(_createdAt desc)`;
 
   const data = await client.fetch(query);
 
